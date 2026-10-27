@@ -72,6 +72,7 @@ endif()
 add_executable(
     systemfeur
     src/main.cpp
+    src/kernel/cmdline.cpp
     src/util/log.cpp
     src/util/process.cpp
 )
