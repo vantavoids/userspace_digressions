@@ -1,0 +1,11 @@
+build/
+build-*/
+cmake-build-*/
+
+.static-libs/
+
+.cache/
+compile_commands.json
+
+*.swp
+*~
