@@ -69,7 +69,14 @@ if(SYSTEMFEUR_STATIC)
     endif()
 endif()
 
-add_executable(systemfeur src/main.cpp)
+add_executable(
+    systemfeur
+    src/main.cpp
+    src/util/log.cpp
+    src/util/process.cpp
+)
+
+target_include_directories(systemfeur PRIVATE src)
 
 target_compile_options(
     systemfeur
