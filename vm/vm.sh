@@ -1,7 +1,7 @@
 #!/bin/sh
-# Fedora 44 test VM for systemfeur
+# fedora 44 test VM for systemfeur
 #
-#   vm.sh install     create the disk and boot the live ISO to install Fedora
+#   vm.sh install     create the disk and boot the live ISO to install fedora
 #   vm.sh provision   copy build/systemfeur into the guest and add a GRUB entry
 #   vm.sh run         boot the installed VM (serial console on this terminal)
 #

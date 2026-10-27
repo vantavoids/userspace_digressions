@@ -8,7 +8,7 @@ out="$dir/systemfeur.conf"
 rm -f "$out"
 src=$(ls "$dir"/*.conf | grep -v rescue | sort -V | tail -n 1)
 
-# No initramfs: the kernel mounts root itself, so it needs the partition GUID
+# no initramfs: the kernel mounts root itself, so it needs the partition GUID
 # (it cannot resolve filesystem UUIDs) and the fs type up front.
 fs_uuid=$(sed -n 's/^options .*root=UUID=\([^ ]*\).*/\1/p' "$src")
 root_dev=$(blkid -U "$fs_uuid")
