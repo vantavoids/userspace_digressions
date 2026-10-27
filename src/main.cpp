@@ -3,6 +3,7 @@
 
 #include "fs/fstab.hpp"
 #include "fs/kernel_fs.hpp"
+#include "fs/root_fs.hpp"
 #include "util/log.hpp"
 
 int main()
@@ -10,6 +11,7 @@ int main()
 	setenv("PATH", "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", 1);
 	util::log::info("gressions :D");
 	fs::mount_kernel_filesystems();
+	fs::check_and_remount_root();
 	fs::mount_fstab();
 loop:
 	pause(); //be nice to mr. cpu

@@ -77,6 +77,7 @@ add_executable(
     src/fs/fstab.cpp
     src/fs/kernel_fs.cpp
     src/fs/mount.cpp
+    src/fs/root_fs.cpp
     src/kernel/cmdline.cpp
     src/util/log.cpp
     src/util/process.cpp
